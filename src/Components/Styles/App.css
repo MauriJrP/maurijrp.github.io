@@ -1,0 +1,31 @@
+/* -------- ------- ------ ----- Colors ----- ------ ------- -------- */
+/* #fadcac
+#158467
+#197163
+#065446 */
+
+.App {
+  color: white;
+  max-width: 1250px;
+  /* width: ; */
+  margin: 0 auto;
+}
+.logo {
+  width: 2.5rem;
+  margin-right: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
