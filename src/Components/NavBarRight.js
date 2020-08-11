@@ -7,7 +7,7 @@ class NavBarRight extends React.Component {
         <ul className="navbar__ul">
           <li className="navbar__li">Principal</li>
           <li className="navbar__li">Proyectos</li>
-          <li className="navbar__li">Contactame</li>
+          <li className="navbar__li">Contacto</li>
         </ul>
       </nav>
     );
