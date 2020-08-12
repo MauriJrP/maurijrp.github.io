@@ -11,6 +11,8 @@
   display: flex;
   padding: 0.5rem;
   align-items: center;
+  text-decoration: none;
+  color: #fff;
 }
 .navbar__right {
   padding: 0.5rem;

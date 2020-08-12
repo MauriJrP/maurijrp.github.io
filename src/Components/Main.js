@@ -14,7 +14,7 @@ class Main extends React.Component {
         <Description />
         <div className="main__container-foto">
           <h2 className="main__name">Mauricio Rodríguez</h2>
-          <img src={Foto} alt="Mauricio Rodriguez" className="main__foto" />
+          <img src={Foto} alt="Mauricio Rodriguez" className="main__photo" />
         </div>
         <Stack />
       </div>
