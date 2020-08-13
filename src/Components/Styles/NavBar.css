@@ -1,11 +1,13 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* min-height: 8vh; */
   align-items: center;
   background-color: #065446;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .navbar__left {
   display: flex;
@@ -27,11 +29,16 @@
   cursor: pointer;
   border-radius: 3px;
   font-weight: 700;
-  /* padding: 1px; */
 }
 .navbar__li:hover {
   background-color: #197163;
   color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
