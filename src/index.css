@@ -12,7 +12,9 @@ body::-webkit-scrollbar-thumb {
   background: #4b4b4b;
   border-radius: 1rem;
 }
-
+a {
+  color: #fff;
+}
 body {
   margin: 0;
   font-family: 'Noto Sans TC', sans-serif;

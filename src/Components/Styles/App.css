@@ -6,7 +6,7 @@
 
 .app {
   color: white;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 .logo {
@@ -14,6 +14,13 @@
   margin-right: 5px;
 }
 
+.subtitle {
+  background-color: #065446;
+  /* line-height: 9vh; */
+  padding: 0.2em;
+  text-align: center;
+  font-size: 2em;
+}
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: App-logo-spin infinite 10s linear;

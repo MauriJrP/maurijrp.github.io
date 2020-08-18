@@ -5,9 +5,15 @@ class NavBarRight extends React.Component {
     return (
       <nav className="navbar__right">
         <ul className="navbar__ul">
-          <li className="navbar__li">Principal</li>
-          <li className="navbar__li">Proyectos</li>
-          <li className="navbar__li">Contacto</li>
+          <a href="/">
+            <li className="navbar__li">Principal</li>
+          </a>
+          <a href="#projects">
+            <li className="navbar__li">Proyectos</li>
+          </a>
+          <a href="#contact">
+            <li className="navbar__li">Contacto</li>
+          </a>
         </ul>
       </nav>
     );
