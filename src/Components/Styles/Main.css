@@ -1,40 +1,43 @@
 .main {
-  background-color: #fadcac;
   margin-top: 10vh;
-  margin-bottom: 35vh;
+  margin-bottom: 33vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-radius: 1rem;
   padding: 1em;
   color: #000;
   text-align: center;
-  column-gap: 1em;
+  column-gap: 2.5em;
+  row-gap: 1em;
   height: 50vh;
 }
-.description {
-  padding-top: 2em;
+.main > div {
+  background-color: #fadcac;
+  border-radius: 5px;
+  padding: 0.8em;
 }
 .description__text {
   margin-top: 1.5em;
   text-align: justify;
 }
-.main__name {
+.main__container-foto {
   position: relative;
-  top: 7.3rem;
+  top: 6em;
+}
+.main__name {
   font-size: 2.1em;
+  margin-bottom: 0.5em;
 }
 .main__photo {
-  position: relative;
-  top: 9.5em;
-  border-radius: 7.2rem;
-  max-width: 250px;
+  /* position: static; */
+  /* top: 9.5em; */
+  border-radius: 8rem;
+  max-width: 240px;
 }
 .stack {
-  padding-top: 2em;
   overflow: hidden;
 }
 .stack__technologies {
-  margin: 1.5em;
+  margin: 1.5em 0;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -53,20 +56,28 @@
     max-width: 90vw;
     margin: 5vh auto;
     height: auto;
+    column-gap: 1em;
   }
   .main__container-foto {
     grid-row: 1 / 3;
-  }
-  .main__name {
     top: 0;
-    margin: 0.6em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .main__photo {
     top: 0;
-    border-radius: 10rem;
   }
+  /* .main > div:nth-child(1),
+  div:nth-child(3) {
+    border-radius: 0;
+    padding: 0.5em;
+  } */
   .stack__technologies {
-    grid-auto-columns: 3fr;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1.5em 0;
+    gap: 0.5em;
   }
 }
 
@@ -81,16 +92,11 @@
     margin: 0;
   }
   .main > div {
-    background-color: #fadcac;
     padding: 0.5em;
     border-radius: 5px;
   }
   .main__container-foto {
     grid-row: 1 / 2;
-  }
-  .main__photo {
-    top: 0;
-    border-radius: 10rem;
   }
   .stack__technologies {
     grid-template-columns: repeat(3, 1fr);
