@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c347257.chunk.css",
-    "main.js": "/static/js/main.1ee4ca1b.chunk.js",
-    "main.js.map": "/static/js/main.1ee4ca1b.chunk.js.map",
+    "main.css": "/static/css/main.e1f2b853.chunk.css",
+    "main.js": "/static/js/main.e1ff24df.chunk.js",
+    "main.js.map": "/static/js/main.e1ff24df.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1c47a842.js",
     "runtime-main.js.map": "/static/js/runtime-main.1c47a842.js.map",
-    "static/js/2.410bfebc.chunk.js": "/static/js/2.410bfebc.chunk.js",
-    "static/js/2.410bfebc.chunk.js.map": "/static/js/2.410bfebc.chunk.js.map",
+    "static/js/2.f28194ce.chunk.js": "/static/js/2.f28194ce.chunk.js",
+    "static/js/2.f28194ce.chunk.js.map": "/static/js/2.f28194ce.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.90266763956413d753edcf8e1fab8b38.js": "/precache-manifest.90266763956413d753edcf8e1fab8b38.js",
+    "precache-manifest.da5076bf57886799749f3d6a89098285.js": "/precache-manifest.da5076bf57886799749f3d6a89098285.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5c347257.chunk.css.map": "/static/css/main.5c347257.chunk.css.map",
-    "static/js/2.410bfebc.chunk.js.LICENSE.txt": "/static/js/2.410bfebc.chunk.js.LICENSE.txt",
+    "static/css/main.e1f2b853.chunk.css.map": "/static/css/main.e1f2b853.chunk.css.map",
+    "static/js/2.f28194ce.chunk.js.LICENSE.txt": "/static/js/2.f28194ce.chunk.js.LICENSE.txt",
     "static/media/carousel.png": "/static/media/carousel.d95dd55c.png",
     "static/media/css.png": "/static/media/css.5cc1d631.png",
     "static/media/foto.jpg": "/static/media/foto.28de3608.jpg",
     "static/media/github.png": "/static/media/github.957c4dd9.png",
     "static/media/html.png": "/static/media/html.e01fd1af.png",
     "static/media/js.png": "/static/media/js.0cded3a3.png",
-    "static/media/logo.png": "/static/media/logo.8a9e71e6.png",
+    "static/media/logo.png": "/static/media/logo.d32a5043.png",
     "static/media/pokeFinder.png": "/static/media/pokeFinder.25dba111.png",
     "static/media/react.png": "/static/media/react.d588ea23.png",
     "static/media/sintaxisBasica.png": "/static/media/sintaxisBasica.c2622b2e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1c47a842.js",
-    "static/js/2.410bfebc.chunk.js",
-    "static/css/main.5c347257.chunk.css",
-    "static/js/main.1ee4ca1b.chunk.js"
+    "static/js/2.f28194ce.chunk.js",
+    "static/css/main.e1f2b853.chunk.css",
+    "static/js/main.e1ff24df.chunk.js"
   ]
 }
