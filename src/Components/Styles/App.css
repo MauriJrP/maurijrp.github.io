@@ -3,16 +3,23 @@
   color: #00adb5;
   color: #222831;
   color: #393e46;
-  color: #eeeeee;
+  color: #eeeeee;fadc94
 } */
-
+.background {
+  height: 8.5vh;
+  width: 100vw;
+  background-color: #065446;
+  position: fixed;
+  top: 10;
+}
 .app {
   color: white;
   max-width: 1250px;
   margin: 0 auto;
 }
 .logo {
-  width: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 7.6vh;
   margin-right: 5px;
 }
 

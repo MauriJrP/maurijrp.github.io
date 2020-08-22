@@ -27,12 +27,6 @@ class Stack extends React.Component {
           />
           <img src={git} alt="git" className="stack__photo" ttitle="git" />
           <img
-            src={github}
-            alt="github"
-            className="stack__photo"
-            title="github"
-          />
-          <img
             src={mysql}
             alt="mysql"
             className="stack__photo"

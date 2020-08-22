@@ -30,6 +30,17 @@ function Proyects(props) {
           href="https://maurijrp.github.io/Carousel/"
           description="Carousel de imagenes"
         />
+        <Project
+          src={sintaxisBasica}
+          alt="sintaxis basica"
+          href="https://maurijrp.github.io/Carousel/"
+          description="Carousel de imagenes"
+        />
+      </div>
+      <div className="projects__button-container">
+        <a target="_blank" href="https://github.com/MauriJrP">
+          <button className="projects__button">Ver más.</button>
+        </a>
       </div>
     </div>
   );
