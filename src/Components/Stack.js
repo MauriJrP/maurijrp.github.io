@@ -6,7 +6,7 @@ import hmtl from '../images/html.png';
 import css from '../images/css.png';
 import js from '../images/js.png';
 import git from '../images/git.png';
-import github from '../images/github.png';
+// import github from '../images/github.png';
 import mysql from '../images/mysql.png';
 import react from '../images/react.png';
 

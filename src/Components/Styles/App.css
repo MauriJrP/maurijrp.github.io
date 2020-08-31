@@ -3,12 +3,19 @@
   color: #00adb5;
   color: #222831;
   color: #393e46;
-  color: #eeeeee;fadc94
+  color: #eeeeee;--secondary-color
 } */
+:root {
+  --primary-color: #34b391;
+  --secondary-color: #fadc94;
+  --tertiary-color: #065446;
+  --quaternary-color: #1f8b79;
+  --border-card-color: #8f753a;
+}
 .background {
   height: 8.5vh;
   width: 100vw;
-  background-color: #065446;
+  background-color: var(--tertiary-color);
   position: fixed;
   top: 10;
 }
@@ -24,7 +31,7 @@
 }
 
 .subtitle {
-  background-color: #065446;
+  background-color: var(--tertiary-color);
   /* line-height: 9vh; */
   padding: 0.2em;
   text-align: center;

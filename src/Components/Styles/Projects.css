@@ -9,7 +9,7 @@
   margin: 8vh auto 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.2em;
+  gap: 0.15em;
   justify-items: center;
 }
 
@@ -20,8 +20,8 @@
   background-color: #fff;
   overflow: hidden;
   transition: transform 0.2s;
-  border: 3px solid #8f7e56;
-  background-color: #fadc94;
+  border: 3px solid var(--border-card-color);
+  background-color: var(--secondary-color);
 }
 
 .projects__card:hover {
@@ -48,21 +48,21 @@
 .projects__button-container {
   display: flex;
   justify-content: center;
+  margin: 8vh auto 0;
 }
 .projects__button {
-  margin: 8vh auto 0;
   padding: 0.7rem 5rem;
   border-radius: 5px;
   background-color: transparent;
-  border: 2px solid #fadc94;
+  border: 3px solid var(--secondary-color);
   transition: all 200ms;
   font-weight: 700;
   font-size: 1.5em;
-  color: #fadc94;
+  color: var(--secondary-color);
   outline: none;
 }
 .projects__button:hover {
-  background-color: #fadc94;
+  background-color: var(--secondary-color);
   border-color: #000;
   color: #000;
   cursor: pointer;

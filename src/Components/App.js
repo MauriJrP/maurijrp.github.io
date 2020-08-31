@@ -5,6 +5,7 @@ import './Styles/App.css';
 import NavBar from './NavBar';
 import Main from './Main';
 import Proyects from './Projects';
+import Form from './Form';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <NavBar />
         <Main />
         <Proyects />
+        <Form />
       </div>
     </div>
   );

@@ -7,14 +7,14 @@
   padding: 1em;
   color: #000;
   text-align: center;
-  column-gap: 4em;
+  column-gap: 5em;
   row-gap: 1em;
   height: 50vh;
 }
 .main > div {
-  background-color: #fadc94;
+  background-color: var(--secondary-color);
   border-radius: 5px;
-  border: 5px solid #8f7e56;
+  border-top: 5px solid var(--border-card-color);
   padding: 0.8em;
 }
 .description__text {
@@ -27,15 +27,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 -1.5em;
 }
 .main__name {
   font-size: 2.1em;
-  margin: 0.4em 0;
+  margin: 0.2em 0;
 }
 .main__photo {
   border-radius: 9rem;
-  border: 13px solid #158467;
-  max-width: 80%;
+  border: 13px solid var(--primary-color);
+  max-width: 70%;
   height: 265px;
   position: absolute;
   top: 8.3em;
@@ -74,6 +75,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   .main__name {
     margin-top: 0;
