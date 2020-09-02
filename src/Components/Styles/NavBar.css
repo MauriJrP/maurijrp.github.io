@@ -1,9 +1,11 @@
 .navbar {
   display: flex;
+  width: 100%;
+  max-width: 1250px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--tertiary-color);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   height: 8.5vh;
@@ -38,6 +40,7 @@
 @media screen and (max-width: 1000px) {
   .navbar {
     border-radius: 0;
+    width: 100vw;
   }
 }
 

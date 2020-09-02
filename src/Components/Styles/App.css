@@ -1,10 +1,5 @@
 /* -------- ------- ------ ----- Colors ----- ------ ------- -------- */
-/* * {
-  color: #00adb5;
-  color: #222831;
-  color: #393e46;
-  color: #eeeeee;--secondary-color
-} */
+
 :root {
   --primary-color: #34b391;
   --secondary-color: #fadc94;
@@ -14,15 +9,19 @@
 }
 .background {
   height: 8.5vh;
+  /* margin-bottom: 8.5vh; */
   width: 100vw;
   background-color: var(--tertiary-color);
   position: fixed;
-  top: 10;
+  top: 0;
 }
 .app {
   color: white;
   max-width: 1250px;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .logo {
   max-width: 2.5rem;
@@ -49,5 +48,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .background {
+    display: none;
   }
 }

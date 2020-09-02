@@ -1,5 +1,5 @@
 .main {
-  margin-top: 10vh;
+  margin-top: 17vh;
   margin-bottom: 33vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -102,6 +102,7 @@
     background-color: transparent;
     row-gap: 0.8em;
     margin: 0;
+    margin-top: 9vh;
   }
   .main > div {
     padding: 0.5em;
