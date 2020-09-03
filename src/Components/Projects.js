@@ -38,7 +38,11 @@ function Proyects(props) {
         />
       </div>
       <div className="projects__button-container">
-        <a target="_blank" href="https://github.com/MauriJrP">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/MauriJrP"
+        >
           <button className="projects__button">Ver más.</button>
         </a>
       </div>
