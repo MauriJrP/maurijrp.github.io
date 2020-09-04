@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 body::-webkit-scrollbar {
   width: 0.7rem;
@@ -17,7 +18,6 @@ a {
 }
 body {
   margin: 0;
-  font-family: 'Noto Sans TC', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-color);

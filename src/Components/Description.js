@@ -11,17 +11,17 @@ class Description extends React.Component {
           Hola!{' '}
           <span role="img" aria-label="hands">
             🙌
+          </span>
+          soy Mauricio Rodríguez, Desarrollador web
+          <span role="img" aria-label="hands">
+            👨‍💻
           </span>{' '}
-          soy Mauricio Rodriguez y actualmente estoy cursando tercer semestre de
-          ingenieria en computacion
+          originario de México. Actualmente estoy cursando tercer semestre de
+          Ingeniería en Computación
           <span role="img" aria-label="hands">
             💻
           </span>
           . <br />
-          <span role="img" aria-label="hands">
-            👨‍💻
-          </span>
-          Desarrollador web originario de Mexico
         </p>
       </div>
     );
