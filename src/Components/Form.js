@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Styles/Form.css';
 import Mail from '../images/mail.png';
+// import emailjs from 'emailjs-com';
 
 export class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
       name: '',
-      emal: '',
+      email: '',
       message: '',
     };
 
@@ -21,9 +22,29 @@ export class Form extends Component {
     });
   }
 
-  handleSubmit(e) {
-    console.log(e);
-    e.preventDefault();
+  handleSubmit(event) {
+    event.preventDefault();
+    const templateId = 'template_hjqgc4z';
+
+    this.sendFeedback(templateId, {
+      message: this.state.message,
+      from_name: this.state.name,
+      reply_to: this.state.email,
+    });
+  }
+
+  sendFeedback(templateId, variables) {
+    window.emailjs
+      .send('service_f3cagsg', templateId, variables)
+      .then((res) => {
+        console.log('Email successfully sent!');
+      })
+      .catch((err) =>
+        console.error(
+          'Oh well, you failed. Here some thoughts on the error that occured:',
+          err
+        )
+      );
   }
 
   render() {
@@ -46,7 +67,7 @@ export class Form extends Component {
               />
             </label>
             <label className="form__label">
-              <p className="form__p"> Correo </p>
+              <p className="form__p"> Correo de contacto </p>
               <input
                 type="email"
                 className="form__input"
