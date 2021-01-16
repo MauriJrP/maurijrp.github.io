@@ -16,7 +16,7 @@ class Description extends React.Component {
           <span role="img" aria-label="hands">
             👨‍💻
           </span>{' '}
-          originario de México. Actualmente estoy cursando tercer semestre de
+          originario de México. Actualmente estoy cursando cuarto semestre de
           Ingeniería en Computación
           <span role="img" aria-label="hands">
             💻

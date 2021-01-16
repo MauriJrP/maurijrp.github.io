@@ -10,7 +10,21 @@
   column-gap: 5em;
   /* row-gap: 1em; */
   height: 50vh;
+  animation-name: appear;
+  animation-duration: .8s;
 }
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translateY(-50vh);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .main > div {
   background-color: var(--secondary-color);
   border-radius: 5px;
@@ -59,12 +73,34 @@
   grid-auto-rows: 4em;
   gap: 0.8em;
 }
+.stack__technologie:hover {
+  filter: drop-shadow(8px 8px 5px gray) grayscale(20%);
+}
+
 .stack__img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   cursor: pointer;
+  animation-name: stack__img-appear;
+  animation-duration: 1.6s;
+  animation-fill-mode: both;
+  opacity: 0;
 }
+
+@keyframes stack__img-appear {
+  50%{
+    /* background: transparent; */
+  }
+  75% {
+    /* background-color: #000; */
+  }
+  100% {
+    opacity: 1;
+    /* background-color: transparent; */
+  }
+}
+
 .stack__description {
   margin: 0 8px;
 }

@@ -10,6 +10,7 @@ export class Form extends Component {
       name: '',
       email: '',
       message: '',
+      feedBack: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -24,13 +25,16 @@ export class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const templateId = 'template_hjqgc4z';
-
-    this.sendFeedback(templateId, {
-      message: this.state.message,
-      from_name: this.state.name,
-      reply_to: this.state.email,
-    });
+    if (this.state.name !== '' && this.state.message !== '' && this.state.email !== '') {
+      const templateId = 'template_hjqgc4z';
+      this.sendFeedback(templateId, {
+        message: this.state.message,
+        from_name: this.state.name,
+        reply_to: this.state.email,
+      });
+    } else {
+      this.feedbackMessage('incorrect')
+    }
   }
 
   sendFeedback(templateId, variables) {
@@ -38,13 +42,32 @@ export class Form extends Component {
       .send('service_f3cagsg', templateId, variables)
       .then((res) => {
         console.log('Email successfully sent!');
+        this.feedbackMessage('correct');
       })
-      .catch((err) =>
+      .catch((err) => {
         console.error(
           'Oh well, you failed. Here some thoughts on the error that occured:',
           err
         )
-      );
+        this.feedbackMessage('incorrect')
+        });
+  }
+
+  feedbackMessage(message) {
+    if (message === 'correct') {
+      this.setState({
+        feedBack: `form__div-correct`
+    });
+    } else {
+      this.setState({
+        feedBack: `form__div-incorrect`
+    });
+    }
+    setTimeout( (  ) => {
+      this.setState({
+        feedBack: ``
+    });
+    }, 4000)
   }
 
   render() {
@@ -87,6 +110,12 @@ export class Form extends Component {
                 onChange={this.handleChange}
               />
             </label>
+            <div className={`form__div-feedback ${this.state.feedBack}`}>
+              { this.state.feedBack === 'form__div-correct' && <p>Mensaje enviado correctamente</p>}
+              {
+                this.state.feedBack === 'form__div-incorrect' && <p>Llena todos los campos correctamente</p>
+              }
+            </div>
             <input type="submit" className="form__submit" />
           </form>
           <a

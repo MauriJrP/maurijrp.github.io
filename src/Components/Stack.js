@@ -125,7 +125,7 @@ class Stack extends React.Component {
             return (
               <div
                 className={
-                  this.state.isActive === technologie.id ? 'active' : ''
+                  this.state.isActive === technologie.id ? 'active' : 'stack__technologie'
                 }
                 key={technologie.id}
               >
